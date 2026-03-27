@@ -90,7 +90,7 @@ void displayList ( List *list ) {
  * free dynamic array data
  */
 void freeList( List *list ) {
-    for( int k=0; k<list->size; ++k )
+    for( int k=0; k<list->length; ++k )
         free( list->data[k] ); // free List Data item
     free( list->data );        // free List Data array
     return;
